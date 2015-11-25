@@ -1,0 +1,1 @@
+{"version":3,"sources":["javascript/config.js"],"names":[],"mappings":";;;AAAC,QAAI,MAAM,GAAG,CAAC,YAAM;AACjB,eAAM;AACF,eAAG,EAAE,UAAU;SAClB,CAAC;KACL,CAAA,EAAG,CAAC;;qBAEU,MAAM","file":"javascript/config.js","sourcesContent":["﻿let config = (() => {\n    return{\n        url: 'YOUR-URL'\n    };\n})();\n\nexport default config;"]}

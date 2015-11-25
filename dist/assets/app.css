@@ -1,0 +1,113 @@
+﻿.panel
+{
+    top: 4px;
+    left: 4px;
+    margin-right: 10px;
+}
+
+#daily
+{
+    max-height: 28vh;
+    overflow: hidden;
+}
+
+#daily ul
+{
+    list-style: none;
+}
+
+.per-day
+{
+    max-height: 46.5vh
+}
+
+#daily ul li
+{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+#daily ul li span
+{
+    margin-right: 4px;
+    width: 15%;
+    float: left;
+}
+
+#daily ul li span.label
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+    width: 10%;
+}
+
+.total
+{
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.total label
+{
+    margin: 0 2% 0 5%;
+    font-size: 1.4em;
+}
+
+#monthly
+{
+    max-height: 28vh;
+    overflow: hidden;
+}
+
+.per-month
+{
+    float: left;
+    clear: both;
+    max-height: 46vh;
+    min-height: 46vh;
+    width: 99.3%
+}
+
+.per-month .total
+{
+    float: left;
+    bottom: 3%;
+    width: 90%;
+    position: absolute;
+}
+
+#monthly ul
+{
+    list-style: none;
+}
+
+.per-month
+{
+    max-height: 46.5vh
+}
+
+#monthly ul li
+{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+#monthly ul li span
+{
+    margin-right: 4px;
+    width: 15%;
+    float: left;
+}
+
+#monthly ul li span.label
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+    width: 10%;
+}

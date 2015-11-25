@@ -8,8 +8,8 @@
             },
             dist: {
                 files: {
-                    'dist/javascript/app.js': 'javascript/app.js',
-                    'dist/javascript/config.js': 'javascript/config.js'
+                    'transpiler/javascript/app.js': 'javascript/app.js',
+                    'transpiler/javascript/config.js': 'javascript/config.js'
                 }
             }
         },
@@ -36,21 +36,9 @@
                 dest: 'dist',
                 expand: true
             },
-            moment: {
-                cwd: './',
-                src: 'vendor/moment/min/**',
-                dest: 'dist',
-                expand: true
-            },
             mousewheel: {
                 cwd: './',
                 src: 'vendor/jquery-mousewheel/**',
-                dest: 'dist',
-                expand: true
-            },
-            mCustomScrollbar: {
-                cwd: './',
-                src: 'vendor/malihu-custom-scrollbar-plugin/**',
                 dest: 'dist',
                 expand: true
             },
@@ -60,12 +48,34 @@
                 dest: 'dist',
                 expand: true
             }
+        },
+        webpack: {
+            main: {
+                entry: "./transpiler/javascript/app.js",
+                output: {
+                    path: "dist/",
+                    filename: "main.js",
+                },
+                stats: {
+                    // Configure the console output
+                    colors: false,
+                    modules: true,
+                    reasons: true
+                },
+                progress: false,
+                failOnError: false,
+                watch: true,
+                keepalive: false,
+                inline: true,
+                hot: true
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-babel');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-webpack');
 
-    grunt.registerTask('default', ['babel', 'copy']);
+    grunt.registerTask('default', ['babel', 'copy', 'webpack']);
 
 };
