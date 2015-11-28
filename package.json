@@ -1,11 +1,16 @@
-﻿{
+{
   "name": "spent-webpack-js-firebase",
   "version": "0.0.1",
-  "description": "The app to present spent using webpack to modularized.",
-  "homepage": "https://github.com/rodrigo-morais/spent-webpack-js-firebase",
-  "main": "./dist/main.js",
+  "description": "The app to present spent from firebase using webpack to modularized the code.",
+  "main": "bundle.js",
+  "dependencies": {
+    "webpack": "^1.12.3"
+  },
+  "devDependencies": {
+    "jquery": "^2.1.4"
+  },
   "scripts": {
-    "test": "grunt test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -13,17 +18,12 @@
   },
   "keywords": [
     "webpack",
-    "firebase",
-    "javascript"
+    "firebase"
   ],
   "author": "Rodrigo Morais",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/rodrigo-morais/spent-webpack-js-firebase/issues"
   },
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-copy": "^0.7.0",
-    "grunt-babel": "^4.0.0"
-  }
+  "homepage": "https://github.com/rodrigo-morais/spent-webpack-js-firebase"
 }

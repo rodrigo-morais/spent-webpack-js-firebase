@@ -1,12 +1,10 @@
-define(["exports", "module"], function (exports, module) {
+define(["exports"], function (exports) {
     "use strict";
 
-    var config = (function () {
+    module.exports = function () {
         return {
             url: "YOUR-URL"
         };
-    })();
-
-    module.exports = config;
+    };
 });
 //# sourceMappingURL=config.js.map

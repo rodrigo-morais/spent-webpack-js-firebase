@@ -53,21 +53,9 @@
             main: {
                 entry: "./transpiler/javascript/app.js",
                 output: {
-                    path: "dist/",
+                    path: "dist/app/",
                     filename: "main.js",
-                },
-                stats: {
-                    // Configure the console output
-                    colors: false,
-                    modules: true,
-                    reasons: true
-                },
-                progress: false,
-                failOnError: false,
-                watch: true,
-                keepalive: false,
-                inline: true,
-                hot: true
+                }
             }
         }
     });

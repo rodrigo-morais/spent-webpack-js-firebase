@@ -1,6 +1,6 @@
 define(["exports"], function (exports) {
     "use strict";
 
-    require(["jquery", "firebase", "config"], function ($, firebase, config) {});
+    require(["jquery"], function ($) {});
 });
 //# sourceMappingURL=app.js.map
