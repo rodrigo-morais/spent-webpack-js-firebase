@@ -1,1 +1,1 @@
-{"version":3,"sources":["javascript/app.js"],"names":[],"mappings":";AAAC,gBAAY,CAAC;;AAEd,WAAO,CAAC,CAAC,QAAQ,CAAC,EAAE,UAAS,CAAC,EAAE,EAE/B,CAAC,CAAC","file":"javascript/app.js","sourcesContent":["﻿'use strict';\n\nrequire(['jquery'], function($) {\n    \n});"]}
+{"version":3,"sources":["javascript/app.js"],"names":[],"mappings":";AAAC,gBAAY,CAAC;;AAEd,WAAO,CAAC,CAAC,QAAQ,EAAE,UAAU,CAAC,EAAE,UAAS,CAAC,EAAE,MAAM,EAAE,EAEnD,CAAC,CAAC","file":"javascript/app.js","sourcesContent":["﻿'use strict';\n\nrequire(['jquery', './config'], function($, config) {\n    \n});"]}

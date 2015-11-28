@@ -51,7 +51,7 @@
         },
         webpack: {
             main: {
-                entry: "./transpiler/javascript/app.js",
+                entry: "./javascript/app.js",
                 output: {
                     path: "dist/app/",
                     filename: "main.js",
