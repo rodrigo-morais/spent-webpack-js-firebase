@@ -1,7 +1,8 @@
 module.exports = {
+	context: __dirname,
     resolve: {
         alias: {
-            jquery: __dirname + '/node_modules/jquery/dist/jquery.js'
+            jquery: '/node_modules/jquery/dist/jquery.js'
         }
     }
 };
