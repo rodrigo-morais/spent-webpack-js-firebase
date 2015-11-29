@@ -1,4 +1,8 @@
-﻿module.exports = function (grunt) {
+﻿var webpackConfig = require('./webpack.config.js'),
+    path = require('path'),
+    js = path.resolve('./transpiler/javascript');
+
+module.exports = function (grunt) {
 
     grunt.initConfig({
         babel: {
@@ -50,10 +54,11 @@
             }
         },
         webpack: {
+            options: webpackConfig,
             main: {
-                entry: "./javascript/app.js",
+                entry: path.join(js , 'app.js'),
                 output: {
-                    path: "dist/app/",
+                    path: __dirname + "/dist/app",
                     filename: "main.js",
                 }
             }

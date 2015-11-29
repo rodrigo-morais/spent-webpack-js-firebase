@@ -1,5 +1,5 @@
 ﻿'use strict';
 
-require(['jquery', './config'], function($, config) {
+require(['jquery', 'config'], function($, config) {
     
 });

@@ -9217,13 +9217,18 @@ webpackJsonp([1],[
 
 /***/ },
 /* 2 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = function () {
-	    return{
-	        url: 'YOUR-URL'
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports) {
+	    "use strict";
+
+	    module.exports = function () {
+	        return {
+	            url: "YOUR-URL"
+	        };
 	    };
-	};
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	//# sourceMappingURL=config.js.map
 
 /***/ }
 ]);
