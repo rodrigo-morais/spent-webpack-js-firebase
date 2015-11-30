@@ -2,9 +2,7 @@ define(["exports"], function (exports) {
     "use strict";
 
     require(["jquery", "firebase", "config"], function ($, firebase, config) {
-        console.log(config().url);
-        console.log($);
-        console.log(firebase);
+        var spending = new firebase(config().url);
     });
 });
 //# sourceMappingURL=app.js.map

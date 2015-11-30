@@ -99,9 +99,7 @@
 	    "use strict";
 
 	    __webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(3), __webpack_require__(4)]; (function ($, firebase, config) {
-	        console.log(config().url);
-	        console.log($);
-	        console.log(firebase);
+	        var spending = new firebase(config().url);
 	    }.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	//# sourceMappingURL=app.js.map

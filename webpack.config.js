@@ -1,6 +1,7 @@
 var path = require('path'),
 	js = path.resolve('./transpiler/javascript');
 
+
 module.exports = {
 	context: __dirname,
     entry: path.join(js , 'app.js'),

@@ -7,8 +7,11 @@
     "webpack": "^1.12.3"
   },
   "devDependencies": {
+    "file-loader": "^0.8.5",
     "firebase": "^2.3.2",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "script-loader": "^0.6.1",
+    "url-loader": "^0.5.7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
