@@ -40,10 +40,10 @@ module.exports = function (grunt) {
                 dest: 'dist',
                 expand: true
             },
-            mousewheel: {
+            firebase: {
                 cwd: './',
-                src: 'vendor/jquery-mousewheel/**',
-                dest: 'dist',
+                src: 'node_modules/firebase/**',
+                dest: 'dist/vendor/firebase',
                 expand: true
             },
             assets: {
