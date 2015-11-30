@@ -300,7 +300,7 @@ webpackJsonp([1],[
 
 	    module.exports = function () {
 	        return {
-	            url: "YOUR-URL"
+	            url: "lgwv0cscs30.firebaseio.com"
 	        };
 	    };
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));

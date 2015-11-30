@@ -96,11 +96,22 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports) {
-	    "use strict";
+					"use strict";
 
-	    __webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(3), __webpack_require__(4)]; (function ($, firebase, config) {
-	        var spending = new firebase(config().url);
-	    }.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
+					__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(3), __webpack_require__(4)]; (function ($, firebase, config) {
+									var spending = new firebase(config().url);
+
+									spending.orderByChild("date").on("child_added", function (snapshot) {
+													var spent = snapshot.val();
+
+													Object.keys(spent).forEach(function (key) {
+																	var _spent = spent[key];
+																	console.log("Date: ", _spent.date, " Item: ", _spent.item, " Value: ", _spent.value);
+													});
+									}, function (errorObject) {
+													console.log("The read failed: " + errorObject.code);
+									});
+					}.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	//# sourceMappingURL=app.js.map
 
