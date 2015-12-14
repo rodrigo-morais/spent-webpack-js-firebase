@@ -15,7 +15,8 @@ module.exports = {
         	jquery: __dirname + '/node_modules/jquery/dist/jquery.min.js',
         	firebase: __dirname + '/node_modules/firebase/lib/firebase-web.js',
             config: path.join(js, 'config.js'),
-            spentController: path.join(js, 'spentController.js')
+            spentController: path.join(js, 'spentController.js'),
+            spentView: path.join(js, 'spentView.js')
         }
     }
 };

@@ -314,11 +314,12 @@ webpackJsonp([1],[
 		"use strict";
 
 		module.exports = function (spent) {
-			var _spent = spent;
+			var _spent = spent,
+			    view = __webpack_require__(6);
 
-			function print() {
-				console.log("Date: ", _spent.date, " Item: ", _spent.item, " Value: ", _spent.value);
-			}
+			var print = function print() {
+				view(_spent).print();
+			};
 
 			return {
 				print: print
@@ -326,6 +327,27 @@ webpackJsonp([1],[
 		};
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	//# sourceMappingURL=spentController.js.map
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports) {
+		"use strict";
+
+		module.exports = function (spent) {
+			var _spent = spent;
+
+			var print = function print() {
+				console.log("Date: ", _spent.date, " Item: ", _spent.item, " Value: ", _spent.value);
+			};
+
+			return {
+				print: print
+			};
+		};
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	//# sourceMappingURL=spentView.js.map
 
 /***/ }
 ]);

@@ -14,7 +14,8 @@ module.exports = function (grunt) {
                 files: {
                     'transpiler/javascript/app.js': 'javascript/app.js',
                     'transpiler/javascript/config.js': 'javascript/config.js',
-                    'transpiler/javascript/spentController.js': 'javascript/spentController.js'
+                    'transpiler/javascript/spentController.js': 'javascript/spentController.js',
+                    'transpiler/javascript/spentView.js': 'javascript/spentView.js'
                 }
             }
         },
