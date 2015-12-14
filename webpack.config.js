@@ -14,7 +14,8 @@ module.exports = {
         alias: {
         	jquery: __dirname + '/node_modules/jquery/dist/jquery.min.js',
         	firebase: __dirname + '/node_modules/firebase/lib/firebase-web.js',
-            config: path.join(js, 'config.js')
+            config: path.join(js, 'config.js'),
+            spentController: path.join(js, 'spentController.js')
         }
     }
 };
